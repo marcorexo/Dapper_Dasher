@@ -62,7 +62,7 @@ int main() {
         runningTime += dT;
         if(runningTime >= updateTime){
             runningTime = 0.0;
-            scarfyRect.x = (frame * scarfyRect.width)/runningTime;
+            scarfyRect.x = frame * scarfyRect.width;
             frame++;
             if(frame > 5) frame = 0;
         }
